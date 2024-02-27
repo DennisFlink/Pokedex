@@ -1,0 +1,60 @@
+@use "../abstracts/Mixins" as m;
+header {
+  position: relative;
+  width: 100%;
+  height: 15rem;
+  background-color: #444;
+  border-bottom: 2px solid white;
+  @include m.display-flex(space-between, center, nowrap);
+
+  nav {
+    height: 8rem;
+    position: absolute;
+    width: 100%;
+    @include m.display-flex(space-evenly, center, nowrap);
+    gap: 10rem;
+    button {
+      border: none;
+      background-color: transparent;
+      width: 15rem;
+      height: 5rem;
+      font-size: 2rem;
+      color: white;
+      cursor: pointer;
+    }
+  }
+}
+.search-container {
+  display: flex;
+  flex-direction: column;
+  label {
+    position: relative;
+    color: white;
+    font-size: 1.5rem;
+  }
+  input {
+    padding: 1rem;
+  }
+}
+.logo {
+  @include m.display-flex(flex-start, center, nowrap);
+  gap: 1rem;
+  margin-left: 1rem;
+  h1 {
+    font-size: 4rem;
+    color: #fff;
+  }
+  img {
+    height: 8rem;
+    width: 8rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    top: 11rem;
+    button {
+      color: gold;
+    }
+  }
+}
