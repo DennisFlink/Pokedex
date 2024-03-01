@@ -1,15 +1,13 @@
-import { PokemonCard } from "./Pokemoncard";
+import { PokemonCard } from './Pokemoncard'
 
 const Pokemonsection = () => {
-  return (
-    <section className="pokemon-section">
-      <div className="pokemon-container">
-        <ul>
-          <PokemonCard />
-        </ul>
-      </div>
-    </section>
-  );
-};
+   return (
+      <section className="pokemon-section">
+         <div className="pokemon-container">
+            <PokemonCard />
+         </div>
+      </section>
+   )
+}
 
-export default Pokemonsection;
+export default Pokemonsection

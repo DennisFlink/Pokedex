@@ -9,14 +9,13 @@ header {
 
   nav {
     height: 8rem;
-    position: absolute;
+    position: relative;
     width: 100%;
-    @include m.display-flex(space-evenly, center, nowrap);
+    @include m.display-flex(space-around, center, nowrap);
     gap: 10rem;
     button {
       border: none;
       background-color: transparent;
-      width: 15rem;
       height: 5rem;
       font-size: 2rem;
       color: white;
